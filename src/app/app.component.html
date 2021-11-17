@@ -7,24 +7,9 @@
         <img src="assets/images/logo.png" alt="luv2shop" class="img-responsive">
       </a>
     </div>
-    <div class="menu-sidebar-content js-scrollbar1">
-      <nav class="navbar-sidebar">
-        <ul class="list-unstyled navbar-list">
-          <li>
-            <a href="#">Books</a>
-          </li>
-          <li>
-            <a href="#">Coffee Mugs</a>
-          </li>
-          <li>
-            <a href="#">Mouse Pads</a>
-          </li>
-          <li>
-            <a href="#">Luggage Tags</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <app-product-category-menu></app-product-category-menu>
+    
+    
   </aside>
   <!-- END MENU SIDEBAR-->
 
@@ -42,7 +27,7 @@
               </button>
             </form>
             <div class="cart-area d-n">
-              <a href="shopping-detail.html">
+              <a routerLink="shopping-detail.html">
                 <div class="total">19.22 <span> 2</span> </div> <i class="fa fa-shopping-cart" aria-hidden="true"></i>
               </a>
             </div>
@@ -57,8 +42,8 @@
 
     <!-- MAIN CONTENT -->
 
-    <app-product-list></app-product-list>
-
+    <!-- the route outlet acts as a placeholder for all the routes -->
+    <router-outlet></router-outlet>
 
   </div>
 
@@ -70,8 +55,8 @@
 
 <footer>
   <ul>
-    <li><a href="#">About Us</a></li>
-    <li><a href="#">Contact Us</a></li>
-    <li><a href="#">Help</a></li>
+    <li><a routerLink="#">About Us</a></li>
+    <li><a routerLink="#">Contact Us</a></li>
+    <li><a routerLink="#">Help</a></li>
   </ul>
 </footer>
